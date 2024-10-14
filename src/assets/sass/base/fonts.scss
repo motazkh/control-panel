@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "janna";
+    src:local('janna') url('../fonts/janna.woff') format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "janna";
+    src:local('janna') url('../fonts/janna-bold.woff') format("woff");
+    font-weight: bold;
+}
+
+$family-heading : "janna" ,"Helvetica Neue" ;
+$family-content : -apple-system,blinkMacSystemFont,"Helvetica Neue" ;
