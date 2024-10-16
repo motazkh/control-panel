@@ -10,8 +10,7 @@
 @import "base/typography";
 @import "base/links";
 
+@import "components/components" ;
+@import "components/demo" ;
 
-$back : silver ;
-body{
-    background-color: $back;
-}
+
