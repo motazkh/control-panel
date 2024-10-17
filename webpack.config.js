@@ -7,11 +7,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     'app': './src/index.js',
-    'assets/js/banner' : './src/assets/js/banner.js'
+    'assets/js/banner' : './src/assets/js/banner.js',
+    'assets/js/tabs' : './src/assets/js/tabs.js',
+    'assets/js/chart' : './src/assets/js/chart.js',
+    'assets/js/upload' : './src/assets/js/upload.js'
   },
   output: {
     path: path.join(__dirname, '/app'),
     filename: '[name].js',
+    publicPath: '/',
   },
   devServer: {
     static: path.join(__dirname, '/app'),
@@ -74,6 +78,10 @@ module.exports = {
         ]
 
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i, 
+        type: 'asset/resource', 
+      },
     ],
   },
   optimization: {
@@ -120,6 +128,69 @@ module.exports = {
   
         template: "./src/components/banner.html",
         chunks: ['app' , 'assets/js/banner']
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/list.html",
+  
+        template: "./src/components/list.html",
+        chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/tabs.html",
+  
+        template: "./src/components/tabs.html",
+        chunks: ['app' , 'assets/js/tabs']
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/upload.html",
+  
+        template: "./src/components/upload.html",
+        chunks: ['app' , 'assets/js/upload']
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/help.html",
+  
+        template: "./src/components/help.html",
+        chunks: ['app' ]
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/summary.html",
+  
+        template: "./src/components/summary.html",
+        chunks: ['app' ]
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/actions.html",
+  
+        template: "./src/components/actions.html",
+        chunks: ['app' ]
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/sidebar.html",
+  
+        template: "./src/components/sidebar.html",
+        chunks: ['app' ]
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/table.html",
+  
+        template: "./src/components/table.html",
+        chunks: ['app' ]
+      }),
+      new HtmlWebpackPlugin({
+
+        filename: "components/chart.html",
+  
+        template: "./src/components/chart.html",
+        chunks: ['app' , 'assets/js/chart' ]
       }),
   ],
 };
