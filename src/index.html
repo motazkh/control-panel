@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية</title>
-    
+
 </head>
+
 <body>
-    <h1>hello</h1>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="main-page">
+            <header class="home-intro">
+                <h2 class="welcome-tag">
+                    مرحبا أحمد , أتمنى ان تقضي يوماً جميلاً <br>
+                    شاهد اخر ما حدث في متجرك
+                </h2>
+                <div class="c-summary">
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">34</span>
+                        <span class="c-summary__key">طلب</span>
+                    </div>
+
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">1345</span>
+                        <span class="c-summary__key">زائر</span>
+                    </div>
+
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">5312$</span>
+                        <span class="c-summary__key">مبيعات</span>
+                    </div>
+                </div>
+            </header>
+            <ul class="c-actions">
+                <li class="c-action">
+                    <span class="c-action__title">طلبات تحتاج المعالجة 10</span>
+                    <a href="" class="c-btn c-action__link">مشاهدة الطلبات</a>
+                </li>
+
+                <li class="c-action">
+                    <span class="c-action__title">رسائل تحتاج الاجابة 5</span>
+                    <a href="" class="c-btn c-action__link">مشاهدة الرسائل</a>
+                </li>
+
+                <li class="c-action">
+                    <span class="c-action__title">منتجات ضرورية على وشك النفاذ 3</span>
+                    <a href="" class="c-btn c-action__link">مشاهدة المنتجات</a>
+                </li>
+            </ul>
+            <div class="c-card">
+                <h3 class="c-card__title">معلومات الشحن غير موجودة</h3>
+                <a href="#" class="c-btn c-btn--primary c-card__action">ربط معلومات الشحن</a>
+                <p class="c-card__desc">
+                    إنّ معلومات الشحن غير متوفرة، لقد سبق وقمت بإعداد موقعك بجعله يبيع أغراض فعلية، عليك بملأ معلومات
+                    الشحن
+                    في متجر حتى يتاح لعكاظ معرفة كيفية توفير الشحن لزبائنك
+                </p>
+            </div>
+            <banner></banner>
+            <chart></chart>
+            <div class="c-tabs js-tabs">
+                <div class="c-tabs__control">
+                    <span class="c-tabs__tab js-tab-link is-active" data-index="orders">طلبات بحاجة لمراجعة</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="products">منتجات على وشك النفاذ</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="clients">زبائن جدد</span>
+                </div>
+                <div class="c-tabs-content">
+                    <div class="c-tabs__tabarea js-tabarea is-active" data-indexed="orders">
+                        <div>tab1</div>
+                    </div>
+                    <div class="c-tabs__tabarea js-tabarea" data-indexed="products">
+                        <div>tab2</div>
+                    </div>
+                    <div class="c-tabs__tabarea js-tabarea" data-indexed="clients">
+                        <div>tab3</div>
+                    </div>
+                </div>
+            </div>
+            <help></help>
+        </div>
+    </div>
 </body>
+
 </html>

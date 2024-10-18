@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة مستخدم</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="singel-page">
+            <header class="page-header">
+                <h1 class="page-title">إضافة مستخدم</h1>
+                <button class="c-btn c-btn--primary" type="submit" form="add-user" name="submit">إضافة مستخدم</button>
+            </header>
+            <form action="" class="c-form" name="add-user">
+                <div class="c-form__controls">
+                    <div class="c-upload js-upload c-upload--small">
+                        <header class="c-upload__header">
+                            <h4 class="c-upload__title">صورة المستخدم</h4>
+                        </header>
+                        <div class="c-upload__body">
+                            <label for="upload-image" class="c-upload__label">ارفع الصورة</label>
+                            <img class="js-upload-placeholder">
+                            <input type="file" name="upload-image" id="upload-image"
+                                class="c-upload__field js-upload-value" accept="image/*">
+                        </div>
+                        <span class="c-upload__label c-upload__label--remove js-upload-remove">احذف الصورة</span>
+                    </div>
+
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="username" class="c-textfield-label">اسم المستخدم</label>
+                            <input type="text" class="c-textfield-input" placeholder="" id="username" required>
+                            <span class="c-textfield-hint"></span>
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="email" class="c-textfield-label">البريد</label>
+                            <input type="text" class="c-textfield-input" placeholder="" id="email" required>
+                            <span class="c-textfield-hint"></span>
+                        </div>
+                        <div class="c-textfield">
+                            <label for="email2" class="c-textfield-label">تأكيد البريد</label>
+                            <input type="text" class="c-textfield-input" placeholder="" id="email2" required>
+                            <span class="c-textfield-hint"></span>
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="password1" class="c-textfield-label">كلمة المرور</label>
+                            <input type="text" class="c-textfield-input" placeholder="" id="password1" required>
+                            <span class="c-textfield-hint"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="password2" class="c-textfield-label">تأكيد كلمة المرور</label>
+                            <input type="text" class="c-textfield-input" placeholder="" id="password2" required>
+                            <span class="c-textfield-hint"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <help></help>
+        </div>
+    </div>
+</body>
+
+</html>
